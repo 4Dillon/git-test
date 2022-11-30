@@ -3,8 +3,6 @@ set -ex
 VERSION=$TAG
 cd ${WORKSPACE}/devopsproject
 
-echo $AWS_PROFILE
-
 whoami
 aws ecr get-login-password --region ap-south-1 | sudo docker login --username AWS --password-stdin "044967670847.dkr.ecr.ap-south-1.amazonaws.com"
 
